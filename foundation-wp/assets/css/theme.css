@@ -1,0 +1,18 @@
+#options-container {display: table;}
+
+h2.header {font-size: 32px; color: #7e957b; font-weight: bold;}
+
+header.options-header {font-size: 24px; font-weight: bold; color: white; padding: 13px; width: 100%; border-radius: 7px; border: 1px solid #dedede; text-shadow: 2px 2px #555; background: #333; clear: both;
+	}
+
+p.options-saved {}
+
+div#options-container {padding: 25px;}
+	div#options-container section {max-width: 650px;}
+		div#options-container section table {padding: 13px; width: 100%;}
+			div#options-container section table tr { }
+			div#options-container section table td {vertical-align: middle; padding: 10px 0 0 0;}
+
+		div#options-container input[type="submit"] {float:right; color: white; padding: 13px; border-radius: 7px; font-size: 14px; font-weight: bold; border: 2px solid #dedede; cursor: pointer; background: #333; text-shadow: 1px 1px #555;}
+
+	div#options-container h3 {font-size: 18px; border-bottom: 1px solid #Dedede; padding-bottom: 7px;}

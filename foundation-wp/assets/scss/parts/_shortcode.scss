@@ -1,0 +1,70 @@
+/************************************
+**
+**	CSS Sheet for Shortcode functions
+**	@file	shortcode.php
+**
+*************************************/
+
+/************************************
+**
+**	@Image Gallery Shortcode
+**
+*************************************/
+
+#thumb-gallery {
+
+	img.thumb {
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid #dedede;
+	padding: 7px;
+	margin: 7px 7px 0 0;
+	width: 125px;
+	height: auto;
+	transition: opacity, ease, 0.3s;
+	}
+	img.thumb:hover {opacity: 0.7;}
+
+}
+
+a.gallery-link {color: #777; text-decoration: none; font-weight: normal !important;}
+
+/************************************
+**
+**	@Content Block Shortcode
+**
+*************************************/
+
+
+#row {width: 100%; clear:both; min-height: 1px;}
+.block {display: block;}
+.col-third {width: 33.333333%; float:left; display: block;}
+.col-half {width: 50%; float:left; display: block;}
+.col-two_third {width:66.666666%; float:left; display: block;}
+
+.col-third,
+.col-half,
+.col-two_third {
+	padding: 11px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+.col-third img,
+.col-half img {
+	width: 100%; 
+	height: auto; 
+	margin: 0px auto;
+}
+
+
+	/*	@Responsive Width & Float */
+
+	@media screen and (max-width: 650px) {
+	.col-half, .col-twothird, .col-onethird {width: 100%; float:none;}
+	.col-half img, .col-twothird img, .col-onethird img {display: block; margin:0px auto;float:none;}
+	}

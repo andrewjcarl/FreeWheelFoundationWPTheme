@@ -1,0 +1,38 @@
+/* ======================================================
+    CORE - the basics, should be all you need
+   ====================================================== */
+
+@import "core/core";
+@import "core/helpers";
+@import "core/reset";
+@import "core/typography";
+
+/* ======================================================
+    PARTS - you know, like car parts, but for web pages
+   ====================================================== */
+
+@import "parts/blog-page";
+@import "parts/blog";
+@import "parts/causes";
+@import "parts/contact-page";
+@import "parts/fancybox";
+@import "parts/features";
+@import "parts/footer";
+@import "parts/header";
+@import "parts/logos";
+@import "parts/menu";
+@import "parts/portfolio";
+@import "parts/services";
+@import "parts/shortcode";
+@import "parts/testimonials";
+@import "parts/videos";
+
+/* ======================================================
+    HELPERS - dependencies, variables, mixins, etc.
+   ====================================================== */
+
+@import "helpers/fonts";
+@import "helpers/layout";
+@import "helpers/mixins";
+@import "helpers/columns";
+@import "helpers/flexbox";

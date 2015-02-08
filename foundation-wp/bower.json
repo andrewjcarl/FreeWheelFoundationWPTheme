@@ -1,0 +1,9 @@
+{
+  "name": "childtheme-seed",
+  "description": "bower seed starter pack, yummy",
+  "version": "0.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
+}

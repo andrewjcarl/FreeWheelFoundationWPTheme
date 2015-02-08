@@ -1,0 +1,189 @@
+/* ====================================
+ * HELPER CLASSES
+ * ==================================== */
+
+.disable-hover {
+  pointer-events: none;
+}
+
+/* if you insist on using floats for layout (the justified inline-blocks are highly recommended) */
+.float, .fl {
+  float: left;
+}
+
+.float-right, .fr {
+  float: right;
+}
+
+.cl {
+  clear:both;
+}
+
+/* clearfix for floats, add .group to parent div */
+.oh,
+.group {
+  overflow: hidden;
+}
+
+.group:after,
+.clearfix:before, 
+.clearfix:after {
+  display: block;
+  width:100%;
+  height: 0;
+  content: "\0020";
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.clearfix:after,
+.group:after { 
+  clear: both; 
+}
+
+.content {
+  background: white;
+  padding-top: 1em;
+}
+
+/* simple reversible hide */
+.hidden,
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+/* super secret irreversible hide */
+.hide-completely {
+  display: none !important;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  text-indent: -9999px;
+  position: absolute;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*  scroll classes for hiding/showing scroll */
+.no-scroll{ overflow:hidden; -webkit-overflow-scrolling:none; }
+.scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+
+
+/* a curtain to drop behind a modal overlay */
+.curtain {
+  height: 100% !important;
+  width: 100%;
+  opacity: 0.75 !important;
+  background: var(--black);
+  position: absolute;
+  z-index: 1;
+}
+
+.curtain.in {
+  height: 100%;
+}
+
+/* add number or monetary symbols */
+.dollar, .cents {
+  position: relative;
+}
+
+.dollar:before, .cents:after, .percent:after {
+  font-size: .75em;
+  position: relative;
+  top: -.625em;
+}
+
+.dollar:before {
+  content: "$";
+}
+
+.cents:after {
+  content: "¢";
+  top: auto;
+  bottom: 0;
+}
+
+.percent:after {
+  content: "%";
+}
+
+.ab,
+.centered.absolutely  {
+  position: absolute;
+}
+
+.centered.absolutely {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/*  more generic center */
+.center { 
+  text-align:center;
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+/* add this class to anything you want to contain within the page width */
+.contain {
+  /* mobile first, it's full width */
+  width: 100%;
+  padding: 0 .5em;
+}
+
+@media screen and (min-width: 33.5em) {
+  .contain {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: 44em) {
+  .contain {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  /* sets and contains contents within the page width */
+  .contain {
+    width: var(--pagewidth);
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+/* ul nav style to remove list-style-type */
+ul.nav {
+  list-style-type: none;
+}
+
+/*  pointer class */
+.m-point { cursor:pointer; }
+
+/*  table & table-cell classes */
+.display-table {display: table;}
+.display-table > .table-cell {display: table-cell;}
+
+/*  transparent background */
+.bg-opaque {
+  background: rgba(0,0,0,.6);
+}
+
+/*  padding helpers */
+.padding-1 {padding:1em;}
+.padding-2 {padding: 2em;}
+.padding-3 {padding: 3em;}

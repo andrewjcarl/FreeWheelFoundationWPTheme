@@ -1,0 +1,126 @@
+
+
+	/* --------------------- PORTFOLIO ISOTOPE ---------------------*/
+
+	.isotope-item {
+	  z-index: 2;
+	}
+
+	.isotope-hidden.isotope-item {
+	  pointer-events: none;
+	  z-index: 1;
+	}
+
+	/* Isotope CSS3 transitions */
+
+	.isotope,
+	.isotope .isotope-item {
+	  -webkit-transition-duration: 0.8s;
+	     -moz-transition-duration: 0.8s;
+	      -ms-transition-duration: 0.8s;
+	       -o-transition-duration: 0.8s;
+	          transition-duration: 0.8s;
+	}
+
+	.isotope {
+	  -webkit-transition-property: height, width;
+	     -moz-transition-property: height, width;
+	      -ms-transition-property: height, width;
+	       -o-transition-property: height, width;
+	          transition-property: height, width;
+	}
+
+	.isotope .isotope-item {
+	  -webkit-transition-property: -webkit-transform, opacity;
+	     -moz-transition-property:    -moz-transform, opacity;
+	      -ms-transition-property:     -ms-transform, opacity;
+	       -o-transition-property:      -o-transform, opacity;
+	          transition-property:         transform, opacity;
+	}
+
+	/* disabling Isotope CSS3 transitions */
+
+	.isotope.no-transition,
+	.isotope.no-transition .isotope-item,
+	.isotope .isotope-item.no-transition {
+	  -webkit-transition-duration: 0s;
+	     -moz-transition-duration: 0s;
+	      -ms-transition-duration: 0s;
+	       -o-transition-duration: 0s;
+	          transition-duration: 0s;
+	}
+
+	.isotope.infinite-scrolling {
+	  -webkit-transition: none;
+	     -moz-transition: none;
+	      -ms-transition: none;
+	       -o-transition: none;
+	          transition: none;
+	}
+	.center_the_menu{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center !important;
+		vertical-align: middle;
+	}
+	.portfolio_options_div{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.foliomenu{
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.portfolio-btn{
+		font-size: 16px;
+		float: left;
+		color: #9aa1a9;
+		background: #eee;
+		padding: 5px 10px;
+		border-radius: 3px;
+		margin: 0 4px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+			-webkit-transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-ms-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+	}
+	.portfolio-btn:hover{color: #59a3fc !important;}
+
+	.last:after{
+		content: "" !important;
+	}
+	#options{padding-bottom: 30px; margin-top: 0px;}
+
+	.portfolio-btn:hover{color:#fff !important; background: #59a3fc !important;}
+
+		/* Isotope content styles */
+
+		#container2 {width: 100%; margin: auto;padding-bottom: 0px;}
+
+		.element {
+		  width: 220px;
+		  height: 250px;
+		  float: left;
+		  position: relative;
+		  margin: 0 9px 28px;
+
+		}
+		.portfolio_element_href,.portfolio_element_href:hover{
+			text-decoration: none;
+			color: #535353;
+		}
+		.element.all{}
+		.element.design{}
+		.element.motion {}
+		.element.websites{}
+		.element.branding{}
+
+
+
+/* --------------------- end ISOTOPE --------------------- */

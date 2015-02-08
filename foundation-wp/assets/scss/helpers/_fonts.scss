@@ -1,0 +1,40 @@
+/* =================================
+   FONTS
+
+   a typeface can greatly impact the image and voice of a site
+   so we have carefully chosen fonts that mesh well with our word mark
+   and that hint at the value we place on efficient, futuristic thinking
+
+   custom fonts add to page load times
+   but we pay this penalty to stand out from the hoi polloi
+
+   ================================= */
+
+	/* 1.Fonts
+================================================== */
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-light';
+    src: url('../fonts/opensans/OpenSans-Light.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:Batch;
+    src:url('Webfont/batch-icons-webfont.eot');
+    src:url('Webfont/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+      url('Webfont/batch-icons-webfont.woff') format('woff'),
+      url('Webfont/batch-icons-webfont.ttf') format('truetype'),
+      url('Webfont/batch-icons-webfont.svg#batchregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+body{ font-family: "OpenSans-light",sans-serif; }

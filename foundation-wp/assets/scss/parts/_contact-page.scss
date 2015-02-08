@@ -1,0 +1,93 @@
+
+
+	/* 12.Contact Page
+================================================== */
+	.contact_info_item{
+		margin-right: 35px;
+
+	}
+	.contact_info_items{
+		padding: 30px 0;
+	}
+
+	.contact_form_div{
+		background: #eee;
+		border-radius: 3px;
+		margin-bottom: 55px;
+	}
+	.google_maps_div, .google_maps_div *{
+		width: 100%;
+		height: 550px;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	#contact_form{
+		padding: 20px 5px;
+	}
+	#contact_form .contact_label{
+		color: #20c7d9;
+		font-size: 15px;
+		font-family: 'OpenSans-light', sans-serif;
+	}
+	.red_text{
+		color: #dc513a;
+	}
+	#contact_form input, #contact_form textarea{
+		font-family: 'OpenSans-light', sans-serif;
+		width: 95%;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		padding: 10px 10px;
+		box-shadow: 0px 0px 0px 0px rgba( 0, 0, 0, 0);
+		margin-top: 8px;
+		max-width: 95%;
+	}
+	#contact_form textarea{
+		 resize: none;
+	}
+	.submit_btn{
+		background: #20c7d9;
+		width: 100%;
+		padding: 10px 10px;
+		box-shadow: 0px 0px 0px 0px rgba( 0, 0, 0, 0);
+		text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0 );
+		border: 0px;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 100;
+		font-family: 'OpenSans-light', sans-serif;
+		-webkit-transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		-ms-transition: all 0.2s linear;
+		-o-transition: all 0.2s linear;
+	}
+	.submit_btn:hover{
+		background:#11b1c2;
+		width: 100%;
+		padding: 10px 10px;
+		box-shadow: 0px 0px 0px 0px rgba( 0, 0, 0, 0);
+		text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0 );
+		border: 0px;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 100;
+		font-family: 'OpenSans-light', sans-serif;
+	}
+	.success{
+		background: #CFFFF5;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #B9ECCE;
+		border-radius: 5px;
+		font-weight: normal;
+	}
+	.error{
+		background: #FFDFDF;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #FFCACA;
+		border-radius: 5px;
+		font-weight: normal;
+	}

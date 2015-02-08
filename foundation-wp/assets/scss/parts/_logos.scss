@@ -1,0 +1,45 @@
+
+	/* 9.Logos
+================================================== */
+	.logos_section{
+		background: #111;
+		padding-top: 55px;
+		padding-bottom: 35px;
+		 position: relative;
+    	z-index: 1;
+	}
+	.logos_bgimage{
+		position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    opacity: .3;
+	    width: 100%;
+	    height: 100%;
+		background: url("../content_images/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.logos_title{
+		font-size: 24px;
+		font-weight: 800;
+		font-family: "OpenSans-light",sans-serif;
+		color: #fff;
+		line-height: 30px;
+	}
+	.logos_tagline{
+		font-size: 16px;
+		font-family: "OpenSans-light",sans-serif;
+		color: #bbbbbb;
+		line-height: 30px;
+	}
+	.logos_imgs{
+		text-align: center;
+	}
+	.logo_item{
+		padding: 30px 0;
+	}

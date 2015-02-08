@@ -1,0 +1,154 @@
+
+/* 2.Header (#Header)
+================================================== */
+  .header{
+    color: #fff;
+    font-family: "OpenSans",sans-serif;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    top: 0;
+  }
+  .header2{
+    position: relative;
+    background: #111;
+    background: url("../content_images/Kohl-Childrens.png") fixed no-repeat center center ;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  .header_warper{
+    height: 84px;
+    background: #777;
+    display: none;
+  }
+
+  .header .logo,.header .logo:link{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header .logo2{
+    color: #444;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .header .logo_tagline{
+    font-size: 12px;
+    font-weight: 100;
+    color: #7e8a98;
+    font-family: "OpenSans-light",sans-serif;
+    position: relative;
+    top: -10px;
+  }
+
+  .header .dot{
+    font-size: 26px;
+    color: #20c7d9;
+  }
+
+  .header_background{
+    background: #000;
+  }
+
+  .header_image{
+    background: url("../content_images/Kohl-Childrens.png") fixed no-repeat center center ;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 280px;
+      text-align: center;
+  }
+  .header_image2{
+    padding-top: 140px;
+  }
+  .header_background_warper{
+    opacity: 1;
+    padding-bottom: 60px;
+  }
+
+  .header_line{
+    margin-top: 5px;
+    color: #7e7e7e;
+    font-size: 20px;
+    float: right;
+  }
+
+  .header_title, .header_title li{
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    line-height: 65px;
+    min-height: 40px;
+  }
+
+  .header_text{
+    margin-top: 30px;
+    line-height: 36px;
+    color: #8a97a5;
+    font-size: 20px;
+    font-family: "OpenSans-light",sans-serif;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .big_button_warper a{
+    color: #fff;
+    padding: 20px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: inline-block;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+  }
+  .big_button_warper a:hover{
+    color: #111;
+    background: #fff;
+  }
+
+  .header_social_tagline{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header_social{
+    position: relative;
+    top: 6px;
+    padding-left: 25px;
+  }
+    .social_padding {
+      padding: 0px 20px;
+   }
+  .social_span{
+      margin-bottom: 30px;
+      display: inline;
+  }
+  .social_span2{
+    margin-top: 20px;
+      display: inline;
+      border: 1px solid #e3e3e3;
+      border-radius: 3px;
+      padding-top: 8px;
+      padding-bottom: 2px;
+      margin-bottom: 30px;
+      display: inline-block;
+  }

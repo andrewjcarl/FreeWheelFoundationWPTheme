@@ -1,0 +1,48 @@
+	/* 13.Cause
+================================================== */
+	.cause_div{
+		padding-bottom: -5px !important;
+	}
+	.cause_image{
+		width: 100%;
+		min-height: 65%;
+		position: relative;
+		bottom: -5px;
+		top: 0px;
+	}
+	.cause_text_div{
+		padding: 20px 0;
+	}
+	.thumb4 img,.thumb4{
+		height: auto;
+		border-top-right-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	.big_cause_text{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.cause_buttom{
+		margin-top: 20px;
+	}
+	.cause_buttom a{
+		border: 2px solid #7f7f7f;
+		border-radius: 2px;
+		padding: 10px 20px;
+		text-decoration: none;
+		color: #7f7f7f;
+		font-size: 15px;
+		font-family: "OpenSans-light",sans-serif;
+		-webkit-transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		-ms-transition: all 0.2s linear;
+		-o-transition: all 0.2s linear;
+	}
+	.cause_buttom a:hover{
+		color: #fff;
+		background: #777777;
+		border-color: #777777;
+	}
+	
+
+
