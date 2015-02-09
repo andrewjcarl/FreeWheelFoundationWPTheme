@@ -11,6 +11,9 @@ if ( !defined('ABSPATH')) exit;
  * @author         Andrew Carl
  * @copyright      2013
  */
+
+$header_class = (is_home() ||  is_front_page()) ? "" : "header2";
+
 ?>
 <!doctype html>
 <!--[if !IE]>      <html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
@@ -30,9 +33,7 @@ if ( !defined('ABSPATH')) exit;
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" type="style/css"/>
-
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,12 +57,11 @@ if ( !defined('ABSPATH')) exit;
 <?php $options = get_option( 'elegant_theme_options' ); ?> 
 
 <!-- #header-wrapper -->
-	<div class="header">
+	<div class="header <?php echo $header_class; ?>">
 	<div class="container">
 		<div class="four columns alpha">
 			<div class="center_mobile">
-			<a href="href="<?php echo home_url('/'); ?>"" class="logo">Foundation</a>
-			<div class="logo_tagline">Just another HTML template</div>
+			<a href="<?php echo home_url('/'); ?>" class="logo"></a>
 			</div>
 		</div>
 		<div class="twelve columns omega">
@@ -70,8 +70,6 @@ if ( !defined('ABSPATH')) exit;
 					<span class="header_social">
 						<a href="#" class="footer_social facebook-c"></a>
 						<a href="#" class="footer_social twitter-c"></a>
-						<a href="#" class="footer_social forrst-c"></a>
-						<a href="#" class="footer_social dribbble-c"></a>
 					</span>
 				</div>
 			</div>
@@ -79,8 +77,8 @@ if ( !defined('ABSPATH')) exit;
 		<!-- end header -->
 
 		<?php if ( has_nav_menu( 'main' ) ) : ?>
-			<nav class="main">
-				<div class="menu">
+			<nav>
+				<div id='cssmenu'>
 					<ul>
 						<?php wp_nav_menu( array( 'theme_location' => 'main', 'items_wrap' => '%3$s', 'container' => '' ) ); ?>
 					</ul>
@@ -88,7 +86,10 @@ if ( !defined('ABSPATH')) exit;
 			</nav>
 		<?php endif; ?>
 
+		</div>
 	</div>
-	<!-- end .header -->
+	</div>
+	<div class="header_warper">
+	</div>
 
 <?php ?>

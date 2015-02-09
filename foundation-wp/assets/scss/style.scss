@@ -6,6 +6,7 @@
 @import "core/helpers";
 @import "core/reset";
 @import "core/typography";
+@import "core/colors";
 
 /* ======================================================
     PARTS - you know, like car parts, but for web pages
@@ -26,6 +27,7 @@
 @import "parts/shortcode";
 @import "parts/testimonials";
 @import "parts/videos";
+@import "parts/single";
 
 /* ======================================================
     HELPERS - dependencies, variables, mixins, etc.

@@ -1,6 +1,6 @@
 /*!
  * joomanji-child v1.0.0
- * Build date: 2015-02-08
+ * Build date: 2015-02-09
  * Copyright 2014.
  */
 @charset "UTF-8";
@@ -1782,7 +1782,7 @@ hr {
 }
 
 .footerlogo {
-  color: #20c7d9;
+  color: #4354a8;
   font-size: 25px;
   font-weight: 800;
   font-family: "OpenSans",sans-serif;
@@ -1872,12 +1872,13 @@ hr {
 
 .header2 {
   position: relative;
-  background: #111;
-  background: url("../../images/freewheel-background.png") fixed no-repeat center center;
+  background: #FFF;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  /* background: url("../../images/freewheel-background2.png") fixed no-repeat center center ;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
 }
 
 .header_warper {
@@ -1887,10 +1888,21 @@ hr {
 }
 
 .header .logo, .header .logo:link {
-  font-size: 25px;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
+  background: url("../images/logo-white.png") center center no-repeat;
+  background-size: auto 100%;
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 55px;
+}
+
+.header2 .logo, .header2 .logo:link {
+  background: url("../images/logo_white-bg.png") center center no-repeat;
+  background-size: auto 100%;
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 55px;
 }
 
 .header .logo2 {
@@ -1919,7 +1931,7 @@ hr {
 }
 
 .header_image {
-  background: url("../../images/freewheel-background.png") fixed no-repeat center center;
+  background: url("../../images/freewheel-background2.png") fixed no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2039,7 +2051,7 @@ hr {
   opacity: .3;
   width: 100%;
   height: 100%;
-  background: url("../content_images/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg") no-repeat center center fixed;
+  background: url("../../images/freewheel-background2.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2444,6 +2456,10 @@ hr {
     border-color: #fff;
   }
 }
+.header2 #cssmenu ul > li:hover > a {
+  color: #4354a8;
+}
+
 /* --------------------- PORTFOLIO ISOTOPE ---------------------*/
 .isotope-item {
   z-index: 2;
@@ -2585,7 +2601,7 @@ hr {
 .Services_1_title_div h3 {
   font-size: 24px;
   font-family: "OpenSans",sans-serif;
-  color: #20c7d9;
+  color: #4354a8;
   font-weight: 700;
   text-align: center;
 }
@@ -2679,7 +2695,7 @@ hr {
 }
 
 .blue_text, .blue_text:hover {
-  color: #20c7d9 !important;
+  color: #4354a8 !important;
   text-decoration: none;
   font-family: "OpenSans-light",sans-serif;
 }
@@ -2727,7 +2743,7 @@ hr {
   font-size: 11px;
   text-align: center;
   font-family: "OpenSans-light",sans-serif;
-  color: #20c7d9;
+  color: #4354a8;
   line-height: 10px;
   font-style: italic;
   position: relative;
@@ -2756,9 +2772,9 @@ hr {
 }
 
 .tile_blue_button a {
-  border: 2px solid #20c7d9;
+  border: 2px solid #4354a8;
   text-decoration: none;
-  color: #20c7d9;
+  color: #4354a8;
   font-size: 12px;
   font-weight: 700;
   padding: 7px 20px;
@@ -2770,7 +2786,7 @@ hr {
 }
 
 .tile_blue_button a:hover {
-  background: #20c7d9;
+  background: #4354a8;
   color: #eee;
 }
 
@@ -3007,6 +3023,10 @@ a.gallery-link {
   text-align: center;
   overflow: hidden;
   vertical-align: middle;
+}
+
+.container.single {
+  padding: 2em 0;
 }
 
 /* ======================================================

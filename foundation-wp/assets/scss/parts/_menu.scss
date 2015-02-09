@@ -341,3 +341,10 @@
     border-color: #fff;
   }
 }
+
+
+.header2 #cssmenu {
+  
+  ul > li:hover > a {color: $blue; }
+
+}

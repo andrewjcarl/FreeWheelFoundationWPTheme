@@ -1,6 +1,6 @@
 /*!
  * joomanji-child v1.0.0
- * Build date: 2015-02-08
+ * Build date: 2015-02-09
  * Copyright 2014.
  */// jQuery Initialization
 jQuery(document).ready(function($){
