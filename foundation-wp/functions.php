@@ -54,6 +54,16 @@ add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
 //	Add post thumbnails
 add_theme_support( 'post-thumbnails' ); 
 
+//  Custom Thumbnail sizes
+add_image_size( 'homepage-causes', 220, 180, true );
+
+
+
+//  Remove WPAutoP
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
+
 //
 //	HTML Additions
 //

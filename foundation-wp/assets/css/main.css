@@ -1,6 +1,6 @@
 /*!
  * joomanji-child v1.0.0
- * Build date: 2015-02-09
+ * Build date: 2015-02-10
  * Copyright 2014.
  */
 @charset "UTF-8";
@@ -750,7 +750,7 @@ textarea {
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: normal;
 }
 
@@ -1859,8 +1859,8 @@ hr {
 /* 2.Header (#Header)
 ================================================== */
 .header {
-  color: #fff;
-  font-family: "OpenSans",sans-serif;
+  color: #FFFFFF;
+  font-family: "OpenSans", sans-serif;
   line-height: 36px;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -1872,7 +1872,7 @@ hr {
 
 .header2 {
   position: relative;
-  background: #FFF;
+  background: #FFFFFF;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   /* background: url("../../images/freewheel-background2.png") fixed no-repeat center center ;
   -webkit-background-size: cover;
@@ -1957,7 +1957,7 @@ hr {
 }
 
 .header_title, .header_title li {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 48px;
   text-align: center;
   line-height: 65px;
@@ -1976,12 +1976,11 @@ hr {
 }
 
 .big_button_warper a {
-  color: #fff;
   padding: 20px 30px;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   border-radius: 5px;
   font-size: 15px;
-  color: #fff;
+  color: #FFFFFF;
   font-weight: 700;
   text-decoration: none;
   margin-bottom: 30px;
@@ -1994,7 +1993,7 @@ hr {
 
 .big_button_warper a:hover {
   color: #111;
-  background: #fff;
+  background: #FFFFFF;
 }
 
 .header_social_tagline {
@@ -2124,6 +2123,7 @@ hr {
 #cssmenu > ul > li > a {
   font-size: 14px;
   font-family: "OpenSans-light",sans-serif;
+  font-weight: 700;
   padding: 15px 20px;
   color: #b0b0b0;
   -webkit-transition: color 0.25s ease-out;

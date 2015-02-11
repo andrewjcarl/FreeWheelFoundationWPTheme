@@ -2,8 +2,8 @@
 /* 2.Header (#Header)
 ================================================== */
   .header{
-    color: #fff;
-    font-family: "OpenSans",sans-serif;
+    color: $white;
+    font-family: $font-header;
     line-height: 36px;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -15,7 +15,7 @@
 
   .header2{
     position: relative;
-    background: #FFF;
+    background: $white;
     box-shadow: 1px 1px 4px rgba(0,0,0,.4);
     /* background: url("../../images/freewheel-background2.png") fixed no-repeat center center ;
     -webkit-background-size: cover;
@@ -98,7 +98,7 @@
   }
 
   .header_title, .header_title li{
-    color: #fff;
+    color: $white;
     font-size: 48px;
     text-align: center;
     line-height: 65px;
@@ -117,12 +117,11 @@
   }
 
   .big_button_warper a{
-    color: #fff;
     padding: 20px 30px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 5px;
     font-size: 15px;
-    color: #fff;
+    color: $white;
     font-weight: 700;
     text-decoration: none;
     margin-bottom: 30px;
@@ -134,7 +133,7 @@
   }
   .big_button_warper a:hover{
     color: #111;
-    background: #fff;
+    background: $white;
   }
 
   .header_social_tagline{

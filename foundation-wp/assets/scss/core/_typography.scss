@@ -1,8 +1,19 @@
 /* #Typography
 ================================================== */
+
+//  Core Fonts
+$font-open-sans: "OpenSans",sans-serif;
+
+
+//  Mappings
+$font-header: $font-open-sans;
+
+
+
+
   h1, h2, h3, h4, h5, h6 {
     color: #181818;
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: $font-header;
     font-weight: normal; }
     
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }

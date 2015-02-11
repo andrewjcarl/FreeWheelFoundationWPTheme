@@ -78,36 +78,26 @@ function causes_cpt_postmeta_box_fields($post) {
 
 
     <div class="page-meta-container">
-        <header class="table-header">Cause Meta Header</header>
 
-        <table>
-            <tbody>
-                <tr>
-                    <td>Cause Title</td>
-                    <td>
-                        <input type="text" size="15" id="post_meta[title]" name="post_meta[title]" value="<?php echo $post_meta[0]["title"]; ?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Description</td>
-                    <td>
-                        <input type="text" size="15" id="post_meta[description]" name="post_meta[description]" value="<?php echo $post_meta[0]["description"]; ?>">
-                    </td>
-                </tr>
-                <tr>    
-                    <td>Total Amount</td>
-                    <td>
-                        <input type="text" size="15" id="post_meta[total_amount]" name="post_meta[total_amount]" value="<?php echo $post_meta[0]["total_amount"]; ?>">
-                    </td>
-                </tr>
-                <tr>    
-                    <td>Donation Link</td>
-                    <td>
-                        <input type="text" size="15" id="post_meta[donation_link]" name="post_meta[donation_link]" value="<?php echo $post_meta[0]["donation_link"]; ?>">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Display Title</span>
+            <input type="text" size="15" class="form-control" id="post_meta[title]" name="post_meta[title]" value="<?php echo $post_meta[0]["title"]; ?>">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="">Cause Description</span>
+            <input type="text" size="15" class="form-control" id="post_meta[description]" name="post_meta[description]" value="<?php echo $post_meta[0]["description"]; ?>">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="">Total Amount Raised</span>
+            <input type="text" size="15" class="form-control" id="post_meta[total_amount]" name="post_meta[total_amount]" value="<?php echo $post_meta[0]["total_amount"]; ?>">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="">Donation Link</span>
+            <input type="text" size="15" class="form-control" id="post_meta[donation_link]" name="post_meta[donation_link]" value="<?php echo $post_meta[0]["donation_link"]; ?>">
+        </div><br>
 
     </div>
 
@@ -145,9 +135,7 @@ function causes_cpt_shortcode_display( $atts, $content="") {
 
     $posts = get_posts( $args );
 
-
     $return = "";
-
     $return .= '
     <div class="container">
         <div class="sixteen columns services_div">
@@ -160,8 +148,7 @@ function causes_cpt_shortcode_display( $atts, $content="") {
             foreach($posts as $post) {
 
                 $return .= '
-                <div class="four columns alpha services_box">
-                     <img class="tile_image" src="http://placehold.it/250x150" alt="">
+                <div class="four columns alpha services_box">' . get_the_post_thumbnail($post->ID, array(220, 180), array('class' => 'tile_image')) .'
                      <div class="box_text_div">
                         <h3 class="box_title">
                             '.$post->post_title.'

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         }
       },
       js: {
-        files: ['<%= pkg.directories.js %>/ng/**/*.js'],
+        files: ['<%= pkg.directories.js %>/**/*.js'],
         tasks: ['compile']
       }
     },

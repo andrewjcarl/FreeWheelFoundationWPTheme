@@ -1,5 +1,20 @@
+//  Core Color Scheme
+
 $red : #d10c00;
 $dark-red : #a30700;
 $cream : #f4ffe6;
 $blue : #4354a8;
 $dark-blue : #2a3e7f;
+
+// Grayscale
+
+$white:        #FFFFFF;  // rgb(255, 255, 255)   hsl(0, 0%, 100%)
+$grey-5:       #F9F9F9;  // rgb( , , ) hsl( , , )
+$grey-10:      #F0F2F1;  // rgb(230, 230, 230)   hsl(0, 0%, 90%)
+$grey-15:      #D9D9D9;  // rgb(217, 217, 217)   hsl(0, 0%, 85%)
+$grey-30:      #B3B3B3;  // rgb(179, 179, 179)   hsl(0, 0%, 70%)
+$grey-50:      #808080;  // rgb(128, 128, 128)   hsl(0, 0%, 50%)
+$grey-63:      #5F5F5F;  // rgb(095, 095, 095)   hsl(0, 0%, 37%)
+$grey-70:      #4d4d4d;  // rgb( , , ) hsl( , , )
+$grey-80:      #333333;  // rgb(051, 051, 051)   hsl(0, 0%, 20%)
+$black:        #000000;  // rgb(000, 000, 000)   hsl(0, 0%, 0%)

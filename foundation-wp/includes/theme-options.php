@@ -14,14 +14,15 @@ add_action( 'admin_menu', 'theme_options_add_page');
 add_action( 'admin_init', 'theme_options_style');
 
 function theme_options_style() {
-	wp_enqueue_style( 'bootstrap_Theme_Stylesheet', get_stylesheet_directory_uri() . '/assets/css/theme.css' );
+	wp_enqueue_style('flat-ui', get_stylesheet_directory_uri() . '/assets/theme/flat-ui/dist/css/flat-ui.css' );
+	wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/assets/theme/flat-ui/dist/css/vendor/bootstrap.min.css');
+
+	wp_enqueue_script('flat-ui-js', get_stylesheet_directory_uri() . '/assets/theme/flat-ui/dist/js/flat-ui.min.js', array( 'jquery') );
 	wp_enqueue_script('theme-js', get_stylesheet_directory_uri() . '/assets/js/wp-theme.js', array( 'jquery') );
 
-	
-
 	//Wordpress Media Upload Scripts
-	wp_enqueue_script('media-upload');
-	wp_enqueue_media(); 
+	//wp_enqueue_script('media-upload');
+	//wp_enqueue_media(); 
 }
 
 // Add bootstrap Options to Wordpress Initialization
@@ -40,94 +41,49 @@ function theme_options_add_page() {
 function bootstrap_options_do_page() {
 	global $select_options; 
 
+	$theme_panels = array("general","footer");
+
 	if ( ! isset( $_REQUEST['settings-updated'] ) ) 
 		$_REQUEST['settings-updated'] = false; 
 	?>
 	<div id="wpwrap">
-	<div id="options-container">
-	<h1>Portfolio Theme Options</h1>
-		<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
+		<div id="options-container" class="container pull-left">
+			<h1>Theme Options</h1>
 
-	<p class="options-saved update-nag"><strong><?php _e( 'Options saved', 'bootstrap' ); ?></strong></p>
-	<?php endif; ?> 
+			<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
+				<div class="alert alert-success" role="alert"><?php _e( 'Options saved', 'bootstrap' ); ?></div>
+			<?php endif; ?> 
 
-	<form method="post" action="options.php">
+		<div class="well well-lg">
+			The following options help provide visibility into features provided in the Foundation HTML theme. 
+		</div>
 
-	<?php settings_fields( 'bootstrap_options' ); ?>  
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="list-group">
+					<?php foreach($theme_panels as $panel) { ?>
+						<li nav-panel-toggle="#<?php echo $panel; ?>" class="list-group-item"><?php echo ucfirst($panel); ?> Options</li>
+					<?php } ?>
+				</ul>
+			</div>
+			<div class="col-md-9">
+				<form method="post" action="options.php">
 
-	<?php $options = get_option( 'bootstrap_theme_options' ); ?> 
+					<?php settings_fields( 'bootstrap_options' ); ?>  
 
-		<!--	begin General Theme Options -->
-		<header class="options-header">General Options</header>
-		<section>
-			<table>
-				<tr>
-					<td colspan="2"><h3>Site Logo</h3></td>
-				</tr>
-				<tr valign="top">
-					<td><?php _e( 'Site Logo URL:', 'bootstrap' ); ?></td>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[logo]" name="bootstrap_theme_options[logo]" value="<?php echo $options[logo]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-					</td>
-				</tr>
-				<tr >
-					<td>Preview:</td>
-					<td>
-						<?php if ( isset( $options[logo] ) && $options[logo] != "" ) { ?> 
-							<br><img src="<?php echo $options[logo]; ?>"/>
-						<?php } else { ?>
-							* No Preview available. Please enter in an image URL
-						<?php }  ?>
-					</td>
-				</tr>
-			</table>
+					<?php $options = get_option( 'bootstrap_theme_options' ); ?> 
+					
+					<?php foreach($theme_panels as $panel) { ?>
+						<div nav-panel id="<?php echo $panel; ?>">
+							<?php get_template_part('includes/theme-options-parts/panel',$panel); ?>
+						</div>
+					<?php } ?>
 
-			<hr/>
-			<table>
-				<tr>
-					<td colspan="2"><h3>Site Background Images</h3></td>
-				</tr>
-				<tr>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[bg_image]" name="bootstrap_theme_options[bg_image][1]" value="<?php echo $options[bg_image][1]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-		            </td>
-		        </tr>
-		        <tr>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[bg_image]" name="bootstrap_theme_options[bg_image][2]" value="<?php echo $options[bg_image][2]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-		            </td>
-		        </tr>
-		        <tr>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[bg_image]" name="bootstrap_theme_options[bg_image][3]" value="<?php echo $options[bg_image][3]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-		            </td>
-		        </tr>
-		        <tr>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[bg_image]" name="bootstrap_theme_options[bg_image][4]" value="<?php echo $options[bg_image][4]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-		            </td>
-		        </tr>
-		        <tr>
-					<td>
-						<input type="text" size="35" id="bootstrap_theme_options[bg_image]" name="bootstrap_theme_options[bg_image][5]" value="<?php echo $options[bg_image][5]?>">
-		                <input id="upload_image_button" type="button" value="Upload Image" style="float:none;" />
-		            </td>
-		        </tr>
-		       </table>
-			<p>
-				<input type="submit" value="<?php _e( 'Save Options', 'bootstrap' ); ?>" />
-			</p>
-		</section>
-		<!--	end General Options -->
-
-		</form>
+				</form>
+			</div>
 		</div>
 	</div>
+</div>
 	<?php }
 
 
