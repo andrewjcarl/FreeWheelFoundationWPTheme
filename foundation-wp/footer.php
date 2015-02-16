@@ -1,18 +1,30 @@
-  <!-- Bottom Footer Section
+<?php $theme_options = get_option( 'bootstrap_theme_options' ); ?>
+
+ <!-- Bottom Footer Section
   ================================================== -->
 <div class="bottom_footer_section">
   <div class="container">
   <div class="sixteen columns bottom_line_dev"> 
-        
-    <div class="footerlogo">
-      FreeWheel Foundation
-    </div>
-    <div class="footer_tagline">
-      A Charity for a Modern World
-    </div>
-    <div class="footer_text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </div>
+    
+    <?php if ($theme_options["footer_headline"] != "") : ?>
+      <div class="footerlogo">
+        <?php echo $theme_options["footer_headline"]; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($theme_options["footer_tagline"] != "") : ?>
+      <div class="footer_tagline">
+        <?php echo $theme_options["footer_tagline"]; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($theme_options["footer_subhead"] != "") : ?>
+      <div class="footer_text">
+        <?php echo $theme_options["footer_subhead"]; ?>
+      </div>
+    <?php endif; ?>
+
+
     <div class="footer_buttom">
         <a href="cause.html">Make a Donation Now</a>
     </div>

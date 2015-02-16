@@ -7,6 +7,7 @@
 //
 
 include(ABSPATH . '/wp-content/themes/foundation-wp/includes/theme-options.php');
+include(ABSPATH . '/wp-content/themes/foundation-wp/includes/theme-options-helper.php');
 include(ABSPATH . '/wp-content/themes/foundation-wp/includes/theme-shortcode.php');
 include(ABSPATH . '/wp-content/themes/foundation-wp/includes/theme-sidebar.php');
 include(ABSPATH . '/wp-content/themes/foundation-wp/includes/theme-widget.php');

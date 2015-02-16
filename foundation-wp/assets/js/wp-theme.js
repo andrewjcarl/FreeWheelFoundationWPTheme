@@ -1,6 +1,6 @@
 /*!
  * joomanji-child v1.0.0
- * Build date: 2015-02-10
+ * Build date: 2015-02-15
  * Copyright 2014.
  */jQuery(document).ready(function ($) {
 
@@ -36,16 +36,22 @@ jQuery(document).ready(function ($) {
 
 	$('[wp-upload]').click(function() {
 		var attr = $(this).attr('wp-upload'),
-        input = $(attr),
-        img = $(this).attr('wp-upload-img'),
-        audio = $(this).attr('wp-upload-audio');
+            input = $(attr),
+            img = $(this).attr('wp-upload-img'),
+            audio = $(this).attr('wp-upload-audio');
+
+        console.log(attr,input,img);
 
 		wp.media.editor.send.attachment = function(props, attachment) {
-			input.val(attachment.url);
+            console.log(props,attachment);
 
-      if (img && img !== "") {
-        var _i = document.getElementById(img.replace('#',''));
-        _i.src = attachment.url;}
+			input.value = attachment.url;
+
+            if (img && img !== "") {
+                var imgNode = document.getElementById(img.replace('#',''));
+                if (imgNode)
+                    imgNode.src = attachment.url;
+            }
 
 		};
 		wp.media.editor.open(this);

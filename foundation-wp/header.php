@@ -12,7 +12,12 @@ if ( !defined('ABSPATH')) exit;
  * @copyright      2013
  */
 
+//	Set our global values for all templates
+global $theme_options;
+
 $header_class = (is_home() ||  is_front_page()) ? "" : "header2";
+
+$theme_options = get_option( 'bootstrap_theme_options' );
 
 ?>
 <!doctype html>
@@ -53,8 +58,6 @@ $header_class = (is_home() ||  is_front_page()) ? "" : "header2";
 
 <!-- body -->
 <body <?php body_class(); ?> >
-
-<?php $options = get_option( 'elegant_theme_options' ); ?> 
 
 <!-- #header-wrapper -->
 	<div class="header <?php echo $header_class; ?>">
